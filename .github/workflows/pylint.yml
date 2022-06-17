@@ -2,6 +2,11 @@ name: Pylint
 
 on: [push]
 
+
+ignore: ['admin.py']
+
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
