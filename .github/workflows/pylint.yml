@@ -1,6 +1,7 @@
 name: Pylint
 
 on: [push]
+  ignore: ["admin"]
 
 jobs:
   build:
@@ -19,6 +20,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
     - name: Analysing the code with pylint
-      exclude: '**/admin.py'
       run: |
         pylint $(git ls-files '*.py')
