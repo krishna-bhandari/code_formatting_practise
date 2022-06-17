@@ -1,7 +1,6 @@
 name: Pylint
 
 on: [push]
-  ignore: ["admin"]
 
 jobs:
   build:
